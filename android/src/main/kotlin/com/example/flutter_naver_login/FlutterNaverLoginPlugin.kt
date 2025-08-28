@@ -1,6 +1,7 @@
 package com.example.flutter_naver_login
 
 import android.app.Activity
+import androidx.annotation.Keep
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -71,6 +72,7 @@ enum class FlutterPluginMethod {
 }
 
 /** FlutterNaverLoginPlugin */
+@Keep
 class FlutterNaverLoginPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
 
     /// The MethodChannel that will facilitate communication between Flutter and native Android
